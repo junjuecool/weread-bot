@@ -1,0 +1,10 @@
+# 微信读书抓包示例（结构合法的假数据，供参考格式）
+# 使用方法：在浏览器中抓包获取真实的 cURL 命令，整体替换本文件内容后保存为 curl_command.txt
+# 详细图文教程见 README.md「1 分钟抓包教程」
+curl 'https://weread.qq.com/web/book/read' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' \
+  -H 'Content-Type: application/json' \
+  -H 'Origin: https://weread.qq.com' \
+  -H 'Referer: https://weread.qq.com/web/reader/57325c05c8ed3a57224187d' \
+  -H 'Cookie: wr_skey=EXAMPLE-SKEY-0123456789abcdef; wr_vid=12345678; wr_local.vid=12345678' \
+  --data-raw '{"appId":"weread_web_h5","ps":"examplePS0001","pc":"examplePC0001","b":"57325c05c8ed3a57224187d","c":"a87322c014a87ff679a21ea"}'
